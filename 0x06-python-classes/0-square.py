@@ -1,9 +1,7 @@
 #!/usr/bin/python3
-"""Instantiation of class square"""
+"""Defines a class Square"""
 
 
 class Square:
-    """Empty class that defines a square"""
-    
+    """An empty Sq class"""
     pass
-    """Empty class that defines a square"""
