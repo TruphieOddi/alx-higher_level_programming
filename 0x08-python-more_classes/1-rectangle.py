@@ -8,17 +8,18 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """Instantiation of rectangle
 
-        Args: width(int) rectanle width
-          height (int) rectangle height
+        Args:
+        width(int) rectanle width
+        height (int) rectangle height
         """
         self.width = width
         self.height = height
 
-    @property 
+    @property
     def width(self):
         """retrieves width of rectangle"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
