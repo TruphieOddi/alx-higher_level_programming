@@ -18,11 +18,11 @@ class Rectangle:
         self.height = height
         Rectangle.number_of_instances += 1
 
-    @property 
+    @property
     def width(self):
         """retrieves width of rectangle"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -71,10 +71,15 @@ class Rectangle:
         return (cls(size, size))
 
     def __str__(self):
-        """Prints the rectangle in #form"""
+        """Prints the rectangle in # form"""
         if self.__width == 0 or self.__height == 0:
-            return ("")
-        return "\n".join([str(self.print_symbol) * self.__width for _ in range(self.__height)])
+            return ""  # Return an empty string for zero width or height
+        ody = []
+        for i in range(self.__height):
+            [ody.append(str(self.print_symbol)) for p in range(self.__width)]
+            if i != self.__height - 1:
+                ody.append("\n")
+        return "".join(ody)  # Return the joined string representation
 
     def __repr__(self):
         """Prints said string + locaca"""
