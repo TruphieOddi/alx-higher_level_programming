@@ -55,7 +55,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ("")
         return "\n".join(["#" * self.width] * self.height)
-
-    def __repr__(self):
-        """still returns the rectangle shape"""
-        return f"Rectangle({self.width}, {self.height})"
