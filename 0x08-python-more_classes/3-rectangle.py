@@ -14,11 +14,11 @@ class Rectangle:
         self.width = width
         self.height = height
 
-    @property 
+    @property
     def width(self):
         """retrieves width of rectangle"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -49,7 +49,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
-    
+
     def __str__(self):
         """Prints the rectangle in #form"""
         if self.__width == 0 or self.__height == 0:
