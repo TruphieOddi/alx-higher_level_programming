@@ -55,12 +55,15 @@ class Rectangle:
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """Prints the rectangle in #form"""
+        """Prints the rectangle in # form"""
         if self.__width == 0 or self.__height == 0:
-            [ody.append(str(self.print_symbol)) for p inrange(self.width)]
+            return ""  # Return an empty string for zero width or height
+        ody = []
+        for i in range(self.__height):
+            [ody.append(str(self.print_symbol)) for p in range(self.__width)]
             if i != self.__height - 1:
                 ody.append("\n")
-                return "".join(ody)
+        return "".join(ody)  # Return the joined string representation
 
     def __repr__(self):
         """Prints said string + locaca"""
