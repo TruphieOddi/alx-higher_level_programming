@@ -1,0 +1,64 @@
+"""
+
+Test module for ``0-add_integer``
+===============================
+
+``add_integer``
+---------------
+
+Returns an integer: the addition of a and b
+
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(1, 1)
+2
+
+Test for adding floating-point values
+
+>>> add_integer(2.0, 3.0)
+5
+
+>>> add_integer(5, -3)
+2
+
+Test for adding floating and non floating
+
+>>> add_integer(2.0, 2)
+4
+
+Test for second arg, default is 98
+
+>>> add_integer(2)
+100
+
+Test for adding neg integer
+
+>>> add_integer(-1, -1)
+-2
+
+Test that numbers are casted as int before addition
+
+>>> add_integer(2.0, 5.0)
+7
+
+Test for float and negative input
+
+Float and negative input:
+
+>>> add_integer(100.3, -2)
+98
+
+Test for string
+
+>>> try:
+...     add_integer("oddi", 9)
+... except Exception as e:
+...     str(e)
+'a must be an integer'
+
+>>> try:
+...     add_integer(5, "oddi")
+... except Exception as e:
+...     str(e)
+'b must be an integer'
+
+"""
