@@ -6,6 +6,7 @@ import jason
 import os
 import csv
 
+
 class Base:
     """This is the base for the incoming tasks with private class attribute:
     __nb_objects"""
@@ -14,7 +15,7 @@ class Base:
 
     def __init__(self, id=None):
         """Initialization of a Base instance."""
-        
+
         if id is not None:
             self.id = id
         else:
