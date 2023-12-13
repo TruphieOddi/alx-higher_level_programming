@@ -2,7 +2,7 @@
 """Module base that defines a base model class"""
 
 
-import jason
+import json
 import os
 import csv
 
